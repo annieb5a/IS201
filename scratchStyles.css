@@ -1,0 +1,108 @@
+/* 1. GLOBAL STYLES (Requirement: Font Family & Color) */
+body {
+    background-color: #f4f7f6; /* Light grey-blue background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50; /* Dark slate text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. HEADER DIV (Requirement: Positioning & Styling) */
+.header-container {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    border-bottom: 5px solid #e67e22;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navigation Links */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 3. MAIN CONTENT DIV (Requirement: Positioning & Styling) */
+.main-body {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* 4. GENERAL IMAGE STYLE (For your large Norway photo) */
+img {
+    border: 8px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* 5. PHOTO GALLERY (The small side-by-side row) */
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows photos to move to next line on small screens */
+    gap: 15px;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.photo-gallery img {
+    width: 150px;           /* Forces same small width */
+    height: 150px;          /* Forces same small height */
+    object-fit: cover;      /* Crops photos perfectly into squares */
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    margin: 0;              /* Overrides the 'auto' margin from general img */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 6. TABLEAU & VIDEO SPACING */
+.tableau-placeholder {
+    margin-top: 5px;    /* Squeezes the gap significantly */
+    padding-top: 0px;   /* Removes internal spacing */
+    border-top: none; 
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    max-width: 100%;
+}
+
+/* 7. FOOTER DIV (Requirement: Positioning & Styling) */
+.footer-container {
+    text-align: center;
+    padding: 30px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 50px;
+}
+
+.footer-container a {
+    color: #3498db;
+    text-decoration: none;
+}
